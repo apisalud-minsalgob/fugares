@@ -1,0 +1,48 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\Usuario\workspace\fugares\node_modules\yarn\bin\yarn.js dev
+
+PATH: 
+  C:\Users\Usuario\workspace\fugares\node_modules\.bin;C:\Users\Usuario\workspace\fugares\node_modules\.bin;C:\Users\Usuario\workspace\node_modules\.bin;C:\Users\Usuario\node_modules\.bin;C:\Users\node_modules\.bin;C:\node_modules\.bin;C:\Program Files\nodejs\node_modules\npm\node_modules\@npmcli\run-script\lib\node-gyp-bin;C:\Users\Usuario\node_modules\.bin;C:\Users\node_modules\.bin;C:\node_modules\.bin;C:\Program Files\nodejs\node_modules\npm\node_modules\@npmcli\run-script\lib\node-gyp-bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Ruby32-x64\bin;C:\Users\Usuario\AppData\Local\Microsoft\WindowsApps;C:\Users\Usuario\AppData\Local\atom\bin;C:\Users\Usuario\AppData\Roaming\npm
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  18.16.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  SyntaxError: C:\Users\Usuario\workspace\fugares\package.json: Unexpected string in JSON at position 280
+      at JSON.parse (<anonymous>)
+      at C:\Users\Usuario\workspace\fugares\node_modules\yarn\lib\cli.js:1629:59
+      at Generator.next (<anonymous>)
+      at step (C:\Users\Usuario\workspace\fugares\node_modules\yarn\lib\cli.js:310:30)
+      at C:\Users\Usuario\workspace\fugares\node_modules\yarn\lib\cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "fugares",
+    "version": "1.0.0",
+    "description": "Agency Jekyll theme\r ====================",
+    "main": "index.js",
+    "scripts": {
+      "dev": "tinacms dev -c \"next dev\"",
+      "build": "tinacms build && next build",
+      "start": "tinacms build && next start"
+    }
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+      "@tinacms/cli": "^1.5.12",
+      "tinacms": "^1.5.5"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

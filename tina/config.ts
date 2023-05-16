@@ -1,12 +1,12 @@
 import { defineConfig } from "tinacms";
 
 // Your hosting provider likely exposes this as an environment variable
-const branch = process.env.HEAD || process.env.VERCEL_GIT_COMMIT_REF || "main";
+const branch = process.env.HEAD || process.env.VERCEL_GIT_COMMIT_REF || "gh-pages";
 
 export default defineConfig({
   branch,
-  clientId: "", // Get this from tina.io
-  token: "", // Get this from tina.io
+  clientId: "5713e059-87d9-452a-a07b-310e1afc879e", // Get this from tina.io
+  token: "fc2aeb985c1ed2f7980e23b9cd16cdbd82ae56aa", // Get this from tina.io
 
   build: {
     outputFolder: "admin",
@@ -39,6 +39,10 @@ export default defineConfig({
             isBody: true,
           },
         ],
+        ui: {
+          // This is an DEMO router. You can remove this to fit your site
+          router: ({ document }) => `/demo/blog/${document._sys.filename}`,
+        },
       },
     ],
   },
